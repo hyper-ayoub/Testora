@@ -48,8 +48,11 @@ public class ApiTestService {
                     Instant.now(),
                     null
             );
-        } catch (IOException | InterruptedException e) {
+        } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
+            long latency = (System.nanoTime() - start) / 1_000_000;
+            return new ApiExecutionResult(0, "", latency, false, false, Instant.now(), e.getMessage());
+        } catch (IOException e) {
             long latency = (System.nanoTime() - start) / 1_000_000;
             return new ApiExecutionResult(0, "", latency, false, false, Instant.now(), e.getMessage());
         }
