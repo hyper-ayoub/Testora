@@ -33,7 +33,7 @@ L’objectif principal est de créer une application desktop Java capable de :
 | Langage | Java 21 (ou version LTS compatible) |
 | Interface desktop | JavaFX (FXML et CSS si nécessaire) |
 | Communication HTTP | Java HttpClient |
-| Base de données | PostgreSQL |
+| Base de données | Mongodb |
 | Accès aux données | JDBC |
 | Traitement JSON | Jackson |
 | Concurrence et planification | ExecutorService / ScheduledExecutorService |
