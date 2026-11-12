@@ -1,0 +1,17 @@
+﻿# icons
+
+## Purpose
+This directory is part of the Testora Desktop API Testing and Monitoring Platform.
+
+## Location
+src\main\resources\icons
+
+## Responsibilities
+Document the responsibilities and contents of this directory here.
+
+## Technologies
+- Java 21
+- JavaFX
+- SQL
+- Maven
+
