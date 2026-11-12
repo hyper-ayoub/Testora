@@ -1,6 +1,7 @@
-# Testora-Desktop-API-Testing-Monitoring-Platform
-A Java desktop application for API testing, automated monitoring, performance analysis and response validation, featuring concurrent request execution and historical reporting.
 
+# Testora-Desktop-API-Testing-Monitoring-Platform
+
+A Java desktop application for API testing, automated monitoring, performance analysis and response validation, featuring concurrent request execution and historical reporting.
 
 # Cahier des charges Testora
 
@@ -33,7 +34,7 @@ L’objectif principal est de créer une application desktop Java capable de :
 | Langage | Java 21 (ou version LTS compatible) |
 | Interface desktop | JavaFX (FXML et CSS si nécessaire) |
 | Communication HTTP | Java HttpClient |
-| Base de données | PostgreSQL |
+| Base de données | SQL |
 | Accès aux données | JDBC |
 | Traitement JSON | Jackson |
 | Concurrence et planification | ExecutorService / ScheduledExecutorService |
@@ -81,7 +82,7 @@ L’objectif principal est de créer une application desktop Java capable de :
 
 ### 2.5 Historique, Rapports & Notifications
 
-- Enregistrer l’historique des requêtes, des campagnes de tests et des contrôles de surveillance dans Mongo
+- Enregistrer l’historique des requêtes, des campagnes de tests et des contrôles de surveillance dans la base de données SQL.
 - Consulter les résultats passés, filtrer l’historique et comparer les exécutions afin d’identifier les régressions.
 - Exporter les résultats et rapports en formats CSV et JSON.
 - Afficher des notifications dans l’application lors d’échecs de tests, d’indisponibilités ou de changements d’état d’un endpoint.
@@ -133,7 +134,7 @@ L’objectif principal est de créer une application desktop Java capable de :
 - **Langage principal :** Java.
 - **Interface :** JavaFX.
 - **Communication avec les API :** Java HttpClient.
-- **Persistance :** Mongo db
+- **Persistance :** SQL.
 - **Architecture :** séparation entre présentation, services applicatifs, moteurs métier et infrastructure.
 - **Exécution concurrente :** `ExecutorService` pour les tâches parallèles et `ScheduledExecutorService` pour la surveillance périodique.
 - **Environnement de développement :** Eclipse IDE et Maven.
